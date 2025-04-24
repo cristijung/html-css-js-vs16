@@ -1,0 +1,131 @@
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header e Navegação */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 2;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+article section {
+    margin-bottom: 2rem;
+}
+
+article section h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+figure {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    font-style: italic;
+    color: #777;
+    margin-top: 0.5rem;
+}
+
+/* Barra Lateral */
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin-left: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #ddd;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+

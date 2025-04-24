@@ -1,0 +1,147 @@
+/* Seletor de Elemento (ou Tipo) */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+/*Seletor de Classe */
+.item-nav {
+    font-weight: bold;
+}
+
+.destaque {
+    color: orange;
+}
+
+.texto-importante {
+    background-color: lightyellow;
+    padding: 5px;
+    border-left: 3px solid gold;
+}
+
+.container {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.ativo {
+    background-color: lightgreen;
+    color: white;
+}
+
+.pseudo-exemplo {
+    border: 1px dashed gray;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Seletor de ID */
+#cabecalho {
+    background-color: #e0f2f7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#lista-itens {
+    margin-top: 10px;
+}
+
+/* Seletor de Atributo */
+button[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+input[type="password"] {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+input[placeholder] { /* seleciona elementos com o atributo 'placeholder' */
+    font-style: italic;
+    color: #777;
+}
+
+/* Seletor de Pseudo-classe */
+a:hover {
+    text-decoration: underline;
+    color: darkcyan;
+}
+
+li:first-child {
+    color: purple;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+button:focus {
+    outline: 2px solid blue;
+}
+
+/* Seletor de Pseudo-elemento */
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+.pseudo-exemplo::first-line {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+/* Combinadores */
+
+/* seletor de Descendente (todos os <a> dentro de <nav>) */
+header nav a {
+    color: darkslategray;
+}
+
+/* seletor de Filho Direto (apenas o <a> dentro do primeiro <li> de <nav>) */
+header nav > ul > li:first-child > a {
+    font-weight: normal;
+}
+
+/* seletor de Irmão Adjacente (o primeiro <p> após um <header>) */
+header + p {
+    text-decoration: underline dotted;
+}
+
+/* seletor de Irmão Geral (todos os <li> que são irmãos após o <li> com a classe 'ativo') */
+#lista-itens .ativo ~ li {
+    opacity: 0.7;
+}
