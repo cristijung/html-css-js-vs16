@@ -145,3 +145,20 @@ header + p {
 #lista-itens .ativo ~ li {
     opacity: 0.7;
 }
+
+
+
+p { font-size: 16px; }
+li::marker { color: gray; }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+
+
+
