@@ -1,0 +1,160 @@
+/* Estilos gerais para o corpo e fontes */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #225470;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #ced4da;
+}
+
+header nav a:hover {
+    background-color: #dee2e6;
+    border-color: #adb5bd;
+    text-decoration: none;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+header p {
+    color: #6c757d;
+}
+
+/* Estilos para a seção principal */
+main {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    flex: 3; /* O artigo ocupa mais espaço */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article header h2 {
+    margin-top: 0;
+    color: #28a745;
+}
+
+article header p {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+article section {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+article section:last-child {
+    border-bottom: none;
+}
+
+article section h3 {
+    color: #17a2b8;
+    margin-top: 0;
+}
+
+article ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+article footer p {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+aside {
+    flex: 1; /* A barra lateral ocupa menos espaço */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    color: #ffc107;
+    margin-top: 0;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #343a40;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 5px;
+}
+
+footer address a {
+    color: #f8f9fa;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}

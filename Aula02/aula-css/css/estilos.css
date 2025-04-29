@@ -1,6 +1,6 @@
 /* Seletor de Elemento (ou Tipo) */
 body {
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
 }
@@ -41,7 +41,8 @@ a {
 }
 
 .container {
-    margin-top: 15px;
+    margin: auto;
+    max-width: 80%;
     border: 1px solid #ccc;
     padding: 10px;
 }
@@ -155,6 +156,7 @@ li::marker { color: gray; }
 img {
     width: 200px;
     height: 150px;
+    border-radius: 4px;
     object-fit: cover; /* a imagem será cortada para preencher */
     object-position: top center; /* posiciona a parte superior central da imagem visível */
   }
