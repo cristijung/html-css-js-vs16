@@ -1,0 +1,165 @@
+/* Estilos base para mobile (a menor tela) */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Navegação em coluna no mobile */
+    align-items: center;
+}
+
+nav li {
+    margin: 0.5em 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+main {
+    padding: 1em;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.hero-content {
+    margin-bottom: 1.5em;
+}
+
+.hero h2 {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    width: 100%; /* Imagem hero responsiva no mobile */
+    height: auto;
+    display: block;
+}
+
+.conteudo-principal {
+    margin-top: 2em;
+}
+
+.artigos {
+    display: flex;
+    flex-direction: column; /* Artigos em coluna no mobile */
+    gap: 1em;
+}
+
+.artigo {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.artigo img {
+    width: 100%; /* Imagens dos artigos responsivas no mobile */
+    height: auto;
+    display: block;
+    margin-bottom: 0.5em;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    margin-top: 2em;
+}
+
+/* Breakpoint para tablets (largura mínima de 768px) */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row; /* Navegação em linha no tablet */
+    }
+
+    nav li {
+        margin: 0 1em;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        padding: 3em;
+    }
+
+    .hero-content {
+        margin-bottom: 0;
+        max-width: 50%;
+    }
+
+    .hero-image {
+        max-width: 40%;
+    }
+
+    .artigos {
+        flex-direction: row; /* Artigos em linha no tablet */
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .artigo {
+        width: calc(50% - 1em); /* Dois artigos por linha no tablet */
+    }
+}
+
+/* Breakpoint para desktops (largura mínima de 992px) */
+@media screen and (min-width: 992px) {
+    .hero-content {
+        max-width: 40%;
+    }
+
+    .hero-image {
+        max-width: 30%;
+    }
+
+    .artigos {
+        justify-content: space-between;
+    }
+
+    .artigo {
+        width: calc(33.33% - 1em); /* Três artigos por linha no desktop */
+    }
+}
