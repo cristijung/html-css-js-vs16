@@ -153,12 +153,18 @@ li::marker { color: gray; }
 
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* a imagem será cortada para preencher */
+    object-position: top center; /* posiciona a parte superior central da imagem visível */
   }
 
 
 
 
+  @media [tipo de mídia] [e] (condição 1) [e] (condição 2) {
+    /* aqui vão as regras CSS a serem aplicadas quando a condição for verdadeira */
+  }
 
+
+  
