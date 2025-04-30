@@ -1,0 +1,104 @@
+/* Mobile First */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(93, 4, 4);    /*cor de fundo do mobile */
+    color:rgb(18, 226, 237);
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(226, 241, 254);
+    padding: 1em;
+    text-align: center;
+    color: #000;
+}
+
+header h1 {
+    color: rgb(1, 18, 32);
+}
+
+nav {
+    background-color: rgb(200, 202, 203);
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+article {
+    background-color: rgb(222, 166, 10);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+aside {
+    background-color: beige;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: rgb(30, 56, 4);
+    padding: 1em;
+    text-align: center;
+    margin-top: 1em;
+    color: aliceblue;
+}
+
+/* telas maiores e desktop - uso de media querie */
+
+/*estilos p telas maiores (tablets e desktop - uso de breakpoints) */
+@media screen and (min-width: 768px)  {
+    body {
+        background-color: rgb(11, 145, 235);
+    }
+    
+    main {
+        display: flex;
+        gap: 0.5em;
+    }
+    
+    article {
+        flex: 2;
+    }
+
+    aside {
+        display: none;
+    }    
+}
+
+/* estilos p telas ainda maiores (desktops - breakpoints) */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: azure;
+    }
+
+    header {
+        background-color: #f00;
+    }
+
+    nav {
+        background-color: rgb(189, 2, 2);
+    }
+
+    article {
+        background-color: rgb(98, 1, 1); 
+    }
+
+    aside {
+        background-color: rgb(59, 3, 3); 
+    }
+
+    footer {
+        background-color: rgb(27, 1, 1);
+    }
+}
