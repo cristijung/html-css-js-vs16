@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Entre em Contato</h1>
+            <form action="/processar-form" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required />
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" required />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua mensagem</legend>
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamacao</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências:</legend>
+                    <div>
+                        <input type="checkbox" id="newsletter" value="sim"/>
+                        <label for="newsletter">Desejo receber novidades por email!</label>
+                    </div>
+                    <div>
+                        <p>Como prefere ser contatado?</p>
+                        <input type="radio" id="contato_email" name="preferencia_contato" value="email" />
+                        <label for="contato_email">Email</label>
+                        <input type="radio" id="contato_telefone" name="preferencia_contato" value="telefone" />
+                        <label for="contato_telefone">Telefone</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar mensagem</button>
+                <button type="reset">Limpar formulário</button>
+                <hr/>
+                <input type="button" value="Enviar" onclick="callfunction"/>
+            </form>
+
+        </div>
+    </section>
+    
+</body>
+</html>

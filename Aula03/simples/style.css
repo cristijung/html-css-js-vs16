@@ -1,0 +1,96 @@
+/* Mobile first */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #700404; /* cor base p mobile */
+    color: #6e6969;
+}
+
+header {
+    background-color: #ddd;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    color: #f5f0f0;
+}
+
+nav {
+    background-color: #ccc;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+article {
+    background-color: #ecc64b;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+aside {
+    background-color: #fbebc6;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #628f15;
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* telas maiores e desktop  - uso de medias queries */
+/* estilos p telas maiores (tablets e desktops - uso de breakpoints) */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #7b0c61; /* cor p tablet */
+    }
+
+    main {
+        display: flex;
+        gap: 0.5em;
+    }
+
+    article {
+        flex: 2;
+    }
+
+    aside {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+/* estilos p telas ainda maiores (desktops - uso de breakpoints) */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: #d0d0d0; /* cor do desktop */
+    }
+
+    header {
+        background-color: #690202;
+    }
+
+    nav {
+        background-color: #c10404;
+    }
+
+    article {
+        background-color: #db0606;
+    }
+
+    aside {
+        background-color: #ed1e1e;
+    }
+
+    footer {
+        background-color: #f85757;
+    }
+}

@@ -1,4 +1,4 @@
-/* Estilos base para mobile (a menor tela) */
+/* estilos base para mobile (a menor tela) */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -19,7 +19,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Navegação em coluna no mobile */
+    flex-direction: column; /* navegação em coluna no mobile */
     align-items: center;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 .hero-image img {
-    width: 100%; /* Imagem hero responsiva no mobile */
+    width: 100%; /* img hero responsiva no mobile */
     height: auto;
     display: block;
 }
@@ -72,7 +72,7 @@ main {
 
 .artigos {
     display: flex;
-    flex-direction: column; /* Artigos em coluna no mobile */
+    flex-direction: column; /* artigos em coluna no mobile */
     gap: 1em;
 }
 
@@ -84,7 +84,7 @@ main {
 }
 
 .artigo img {
-    width: 100%; /* Imagens dos artigos responsivas no mobile */
+    width: 100%; /* imgs dos artigos responsivas no mobile */
     height: auto;
     display: block;
     margin-bottom: 0.5em;
@@ -99,7 +99,7 @@ footer {
     margin-top: 2em;
 }
 
-/* Breakpoint para tablets (largura mínima de 768px) */
+/* breakpoint para tablets (largura mínima de 768px) */
 @media screen and (min-width: 768px) {
     header {
         display: flex;
@@ -110,7 +110,7 @@ footer {
     }
 
     nav ul {
-        flex-direction: row; /* Navegação em linha no tablet */
+        flex-direction: row; /* navegação em linha no tablet */
     }
 
     nav li {
@@ -135,17 +135,17 @@ footer {
     }
 
     .artigos {
-        flex-direction: row; /* Artigos em linha no tablet */
+        flex-direction: row; /* artigos em linha no tablet */
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
     .artigo {
-        width: calc(50% - 1em); /* Dois artigos por linha no tablet */
+        width: calc(50% - 1em); /* dois artigos por linha no tablet */
     }
 }
 
-/* Breakpoint para desktops (largura mínima de 992px) */
+/* breakpoint para desktops (largura mínima de 992px) */
 @media screen and (min-width: 992px) {
     .hero-content {
         max-width: 40%;
@@ -160,6 +160,6 @@ footer {
     }
 
     .artigo {
-        width: calc(33.33% - 1em); /* Três artigos por linha no desktop */
+        width: calc(33.33% - 1em); /* três artigos por linha no desktop */
     }
 }
