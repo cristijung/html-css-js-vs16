@@ -1,4 +1,4 @@
-/* Estilos gerais para o corpo e fontes */
+/* estilos gerais para o corpo e fontes */
 body {
     font-family: Montserrat, sans-serif;
     margin: 20px;
@@ -20,7 +20,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para o cabeçalho */
+/* estilos para o cabeçalho */
 header {
     background-color: #e9ecef;
     padding: 15px;
@@ -62,14 +62,14 @@ header p {
     color: #6c757d;
 }
 
-/* Estilos para a seção principal */
+/* estilos para a seção principal */
 main {
     display: flex;
     gap: 20px;
 }
 
 article {
-    flex: 3; /* O artigo ocupa mais espaço */
+    flex: 3; /* artigo ocupa mais espaço */
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -114,7 +114,7 @@ article footer p {
 }
 
 aside {
-    flex: 1; /* A barra lateral ocupa menos espaço */
+    flex: 1; /* barra lateral ocupa menos espaço */
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 5px;
@@ -135,7 +135,7 @@ aside ul li {
     margin-bottom: 10px;
 }
 
-/* Estilos para o rodapé */
+/* estilos para o rodapé */
 footer {
     text-align: center;
     padding: 15px;
