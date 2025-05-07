@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  background-color: #2b2b2b;
+}
+#cadastro-aluno,
+#lista-alunos {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="number"] {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* transição suave para a borda e sombra ..... */
+}
+
+h1, h3 {
+    color: #ccc;
+}
+
+h2 {
+    color: rgb(88, 5, 157);
+}
+
+
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #808080; 
+  box-shadow: 0 0 5px rgba(88, 88, 88, 0.5); /* sombra */
+  outline: none; 
+}
+
+/* estilo para o botão Cadastrar ... */
+#btn-cadastrar {
+  border-radius: 5px;
+  background-color: #a006e7;
+  color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease; /* transição suave para a cor de fundo */
+}
+
+#btn-cadastrar:hover {
+  background-color: #7304a7; 
+  box-shadow: 0 0 5px rgba(88, 88, 88, 0.5);
+}
+
+
+#lista-alunos ul {
+  list-style: none;
+  padding: 0;
+}
+#lista-alunos li {
+  border-bottom: 1px dashed #eee;
+  padding: 10px 0;
+}
+#lista-alunos li:last-child {
+  border-bottom: none;
+}
+.aprovado {
+  color: green;
+  font-weight: bold;
+}
+.reprovado {
+  color: red;
+  font-weight: bold;
+}
+#media-turma {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.header {
+    background-color: #343a40; 
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* o header acima de outros elementos */
+}
+
+.footer {
+    background-color: #343a40; 
+    color: #c6c8c9; 
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /* fixa o footer na parte inferior */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ajuste para o conteúdo principal não ficar escondido pelo header */
+.container {
+    padding-top: 6rem; 
+    padding-bottom: 3rem; 
+}
