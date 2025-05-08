@@ -1,0 +1,23 @@
+#cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cat-card {
+    width: 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .cat-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cat-card ul {
+    list-style: none;
+    padding: 0;
+  }
