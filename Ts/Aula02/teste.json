@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",          
+    "module": "ESNext",          
+    "outDir": "./js", //dir de saída para os arquivos Js compilados             
+    "rootDir": "./ts", //dir raiz dos arquivos Ts            
+    "strict": true,               
+    "esModuleInterop": true,      
+    "skipLibCheck": true,         
+    "forceConsistentCasingInFileNames": true 
+  },
+  "include": [
+    "./ts/**/*"               
+  ],
+  "exclude": [
+    "node_modules"              
+  ]
+}
