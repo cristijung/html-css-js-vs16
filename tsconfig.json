@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": true,
     "target": "ES2017",          
     "module": "ESNext",          
     "outDir": "./js", //dir de saída para os arquivos Js compilados             

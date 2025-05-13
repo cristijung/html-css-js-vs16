@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",          /* qual a versão do ECMAScript de destino. */
+    "module": "ESNext",          /* o sistema de módulos a ser usado. 'ESNext' é bom para projetos front-end modernos que podem usar bundlers tenebrosos mas eficientes. */
+    "outDir": "./js",             /* especifica o diretório de saída para os arquivos JavaScript compilados. */
+    "rootDir": "./ts",            /* qual o diretório raiz dos arquivos TypeScript. */
+    "strict": true,               /* habilita todas as verificações de tipo estrito. Recomendado para melhor segurança de tipo. */
+    "esModuleInterop": true,      /* permite a interoperabilidade entre módulos CommonJS e ES Modules. */
+    "skipLibCheck": true,         /* ignora a verificação de tipo de todos os arquivos de declaração (*.d.ts). */
+    "forceConsistentCasingInFileNames": true /* envia um erro se a caixa de um nome de arquivo não corresponder à caixa das referências. */
+  },
+  "include": [
+    "./ts/**/*"                /* arquivos ou padrões q vão ser incluídos na compilação. */
+  ],
+  "exclude": [
+    "node_modules"              /* arquivos ou padrões q vão ser excluídos da compilação. */
+  ]
+}
+
+// Como usar o tsconfig.json:
+// Depois de criar e configurar o tsconfig.json, siga estes passos para compilar seu TypeScript:
+// Abra o terminal: Navegue até a raiz do seu projeto (sistema-papelaria) no terminal.
+// Execute o comando tsc: Simplesmente digite tsc e pressione Enter.
+// O compilador do TypeScript irá automaticamente procurar pelo arquivo tsconfig.json no diretório atual 
+// e usar as configurações definidas nele para compilar todos os arquivos TypeScript encontrados na pasta ts 
+// (de acordo com a configuração "include") e gerar os arquivos JavaScript correspondentes na pasta js (de acordo com a configuração "outDir").
+// SEMPRE Q TIVER ALTERAÇÕES NOS ARQUIVOS TS É NECESSÁRIO EXECUTAR O COMPILLER DE NOVO (TSC)
